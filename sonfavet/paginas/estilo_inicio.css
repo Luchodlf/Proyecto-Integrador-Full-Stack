@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2? family = Birthstone + Rebote: wght @ 500 &family = Montserrat: wght @ 200 & family = Oswald: wght @ 300 & familia = Fuente + Sans + Pro: wght @ 300 & display = swap ');
+.app{
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-areas: 
+    "navbar"
+    "contenido"
+    "pie"
+    ;
+    grid-template-columns: auto;
+    grid-template-rows: 65px 75vh 65px;
+}
+.navegador{
+    grid-area: navbar;
+    
+}
+.contenido{
+    grid-area: contenido;
+    
+}   
+.pie{
+    grid-area: pie;
+}
+.seccion{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 70% 40%;
+    height: calc(100vh);
+    gap: 15px;
+    
+}
+
+
+.seccion__principal{
+    background-image: url(../imag/rose-petals.png);
+    background-size: cover;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+
+ 
+
+}
+.seccion__principal h1{
+    font-size: 100px;
+}
+/*
+.seccion__nosotros{
+    background-color: whitesmoke;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    border: solid #d4f1ff;
+    
+}
+.nosotros__right{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-family: 'Montserrat', sans-serif
+}
+.nosotros__left img{
+    height: 345px;
+}
+
+
+.seccion__contacto{
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    border: solid #d4f1ff;
+}
+/*
+.contacto__left{
+    background-color: #d4f1ff;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-family: 'Montserrat', sans-serif
+}
+.contacto__right{
+    height: 345px;
+}
+*/

@@ -1,0 +1,56 @@
+
+.cuerpo{
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-areas: 
+    "navbar"
+    "site-content"
+    "pie"
+    ;
+    grid-template-columns: auto;
+    grid-template-rows: 70px 110vh 70px;
+    
+}
+.navegador{
+    grid-area: navbar;
+}
+.site-content{
+    grid-area: site-content;
+}
+.contac{
+    background-image: url(../imag/Rect\ Light.svg);
+    background-repeat: repeat-x;
+    background-position: 25% 85%;
+    height: 65vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #23bac4;
+    margin: 0%;
+}
+#direcciones{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer{
+    grid-area: pie;
+}
+
+
+.container {
+    height: calc(50vh)
+}
+.contenedor{
+    
+    height: 70vh;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #23bac4;
+}
+
