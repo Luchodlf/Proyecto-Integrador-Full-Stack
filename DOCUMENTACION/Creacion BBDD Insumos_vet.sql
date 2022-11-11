@@ -24,7 +24,7 @@ USE `insumos_vet` ;
 -- Table `insumos_vet`.`articulos`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `insumos_vet`.`articulos` (
-  `id_articulo` INT NOT NULL,
+  `id_articulo` INT NOT NULL AUTO_INCREMENT,
   `nombre` VARCHAR(30) NOT NULL,
   `fecha_vto` DATE NOT NULL,
   `stock_minimo` INT NOT NULL,
@@ -39,7 +39,7 @@ COLLATE = utf8mb4_0900_ai_ci;
 -- Table `insumos_vet`.`sucursales`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `insumos_vet`.`sucursales` (
-  `id_sucursal` INT NOT NULL,
+  `id_sucursal` INT NOT NULL AUTO_INCREMENT,
   `nombre` VARCHAR(30) NOT NULL,
   `domicilio` INT NOT NULL,
   `telefono` INT NOT NULL,
@@ -53,7 +53,7 @@ COLLATE = utf8mb4_0900_ai_ci;
 -- Table `insumos_vet`.`estados`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `insumos_vet`.`estados` (
-  `id_estado` INT NOT NULL,
+  `id_estado` INT NOT NULL AUTO_INCREMENT,
   `descripcion` VARCHAR(30) NOT NULL,
   PRIMARY KEY (`id_estado`))
 ENGINE = InnoDB
@@ -97,7 +97,7 @@ COLLATE = utf8mb4_0900_ai_ci;
 -- Table `insumos_vet`.`perfiles`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `insumos_vet`.`perfiles` (
-  `id_perfil` INT NOT NULL,
+  `id_perfil` INT NOT NULL AUTO_INCREMENT,
   `descripcion` VARCHAR(30) NOT NULL,
   PRIMARY KEY (`id_perfil`))
 ENGINE = InnoDB
@@ -109,7 +109,7 @@ COLLATE = utf8mb4_0900_ai_ci;
 -- Table `insumos_vet`.`usuarios`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `insumos_vet`.`usuarios` (
-  `id_usuario` INT NOT NULL,
+  `id_usuario` INT NOT NULL AUTO_INCREMENT,
   `usuario` VARCHAR(30) NOT NULL,
   `password` VARCHAR(30) NOT NULL,
   `perfil` INT NOT NULL,
@@ -130,7 +130,7 @@ COLLATE = utf8mb4_0900_ai_ci;
 -- Table `insumos_vet`.`empleados`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `insumos_vet`.`empleados` (
-  `id_empleado` INT NOT NULL,
+  `id_empleado` INT NOT NULL AUTO_INCREMENT,
   `nombre` VARCHAR(30) NOT NULL,
   `apellido` VARCHAR(30) NOT NULL,
   `dni` INT NOT NULL,
@@ -159,7 +159,7 @@ COLLATE = utf8mb4_0900_ai_ci;
 -- Table `insumos_vet`.`tipos_movimientos`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `insumos_vet`.`tipos_movimientos` (
-  `id_movimiento` INT NOT NULL,
+  `id_movimiento` INT NOT NULL AUTO_INCREMENT,
   `descripcion` VARCHAR(30) NOT NULL,
   PRIMARY KEY (`id_movimiento`))
 ENGINE = InnoDB
@@ -171,7 +171,7 @@ COLLATE = utf8mb4_0900_ai_ci;
 -- Table `insumos_vet`.`movimientos`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `insumos_vet`.`movimientos` (
-  `id_movimiento` INT NOT NULL,
+  `id_movimiento` INT NOT NULL AUTO_INCREMENT,
   `id_tipomovimiento` INT NOT NULL,
   `fecha` DATE NOT NULL,
   `usuario` INT NOT NULL,
@@ -224,7 +224,7 @@ COLLATE = utf8mb4_0900_ai_ci;
 -- Table `insumos_vet`.`proveedores`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `insumos_vet`.`proveedores` (
-  `id_proveedor` INT NOT NULL,
+  `id_proveedor` INT NOT NULL AUTO_INCREMENT,
   `nombre` VARCHAR(30) NOT NULL,
   `apellido` VARCHAR(30) NOT NULL,
   `direccion` VARCHAR(30) NOT NULL,
@@ -241,7 +241,7 @@ COLLATE = utf8mb4_0900_ai_ci;
 -- Table `insumos_vet`.`ordenes_compra`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `insumos_vet`.`ordenes_compra` (
-  `id_ordencompra` INT NOT NULL,
+  `id_ordencompra` INT NOT NULL AUTO_INCREMENT,
   `fecha` DATE NOT NULL,
   `proveedor` INT NOT NULL,
   `usuario` INT NOT NULL,
@@ -293,7 +293,7 @@ COLLATE = utf8mb4_0900_ai_ci;
 -- Table `insumos_vet`.`pedidos`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `insumos_vet`.`pedidos` (
-  `id_pedido` INT NOT NULL,
+  `id_pedido` INT NOT NULL AUTO_INCREMENT,
   `fecha` DATE NOT NULL,
   `usuario` INT NOT NULL,
   PRIMARY KEY (`id_pedido`),
@@ -338,7 +338,7 @@ COLLATE = utf8mb4_0900_ai_ci;
 -- Table `insumos_vet`.`permisos`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `insumos_vet`.`permisos` (
-  `id_permiso` INT NOT NULL,
+  `id_permiso` INT NOT NULL AUTO_INCREMENT,
   `descripcion` VARCHAR(30) NOT NULL,
   INDEX `id_permiso` (`id_permiso` ASC) VISIBLE)
 ENGINE = InnoDB
