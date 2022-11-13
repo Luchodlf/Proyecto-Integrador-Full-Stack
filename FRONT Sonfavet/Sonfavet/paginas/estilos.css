@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ @font-face {
+    font-family: 'fuenteSonfa';
+    src: url('../fuentes/TangoSans_Italic.ttf');
+  }
+
+body{
+  width: 100%;
+  height: 100vh;
+}
+
+.izquierda{
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  float: left;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.izquierda form{
+  height: 100%;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.izquierda h2{
+  font-family: 'fuenteSonfa';
+  font-size: 5em;
+  color: rgb(4, 4, 129);
+  text-shadow: 5px 5px #558ABB;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.izquierda form > input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1.2em;
+  border-radius: 15px;
+}
+
+.izquierda label{
+  width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.izquierda button {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 0;
+  margin: 20px 0;
+  border-radius: 15px;
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+
+}
+.check{
+  width: 100%;
+  margin: 20px 0;
+}
+
+.derecha{
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  float: right;
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.derecha img{
+  width: 50%;
+  height: 50%;
+  margin: 20px 0;
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+
+@media only screen and (max-width: 768px){
+  .derecha {
+    display: none;
+  }
+
+
+.izquierda {
+  width: 100%;
+}
+
+.izquierda form {
+  width: 95%;
+  padding: 0 1em;
+}
+}
+
