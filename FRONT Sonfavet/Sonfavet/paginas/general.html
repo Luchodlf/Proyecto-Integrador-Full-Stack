@@ -5,12 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SONFAVET</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="estilos.css">
   <link rel="icon" href="../imag/logo.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-  
+
 </head>
 
 <body>
@@ -20,7 +20,8 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <img src="../imag/logoGrande.png"  class="logo"></li>
+              <img src="../imag/logoGrande.png" class="logo">
+            </li>
           </ul>
           <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
@@ -60,203 +61,216 @@
           </ul>
         </div>
       </div>
-    
+
       <div>
-    <h1>General</h1>
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Empleados
-</button>
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
-  Proveedores
-</button>
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-  Usuarios
-</button>
+        <h1>General</h1>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Empleados
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+          Proveedores
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+          Usuarios
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Perfiles
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+          Sucursales
+        </button>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-      </div>
-      <div class="modal-body">
-        <div class="col py-3 ">
-          <div class="text-center mb-1">
-            </div>            
-            <select class="form-select form-select-sm mb-2" aria-label=".form-select-sm example">
-              <option selected>Elija una opción</option>
-              <option value="1">Ingresar</option>
-              <option value="2">Actualizar</option>
-              <option value="3">Borrar</option>
-              <option value="4">Modificar</option>
-              <option value="5">Buscar</option>
-            </select>
-            <div class="row g-3">
-              <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
               </div>
-              <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+              <div class="modal-body">
+                <div class="col py-3 ">
+                  <div class="text-center mb-1">
+                  </div>
+                  <select class="form-select form-select-sm mb-2" aria-label=".form-select-sm example">
+                    <option selected>Elija una opción</option>
+                    <option value="1">Ingresar</option>
+                    <option value="2">Actualizar</option>
+                    <option value="3">Borrar</option>
+                    <option value="4">Modificar</option>
+                    <option value="5">Buscar</option>
+                  </select>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="DNI" aria-label="doc">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Dirección" aria-label="direc">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="País" aria-label="pais">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="Ciudad" aria-label="ciudad">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="CP" aria-label="cp">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="Telefono" aria-label="telefono">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="Email" aria-label="mail">
+                    </div>
+                    <select class="form-select form-select-sm mb-5" aria-label=".form-select-sm example">
+                      <option selected>Sucursar</option>
+                      <option value="1">""</option>
+                      <option value="2">""</option>
+                      <option value="3">""</option>
+                    </select>
+                  </div>
+                </div>
               </div>
-              <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="DNI" aria-label="doc">
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Guardar</button>
+                <button type="button" class="btn btn-primary">Consultas</button>
               </div>
-              <div class="col">
-                <input type="text" class="form-control" placeholder="Dirección" aria-label="direc">
-              </div>
-              <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="País" aria-label="pais">
-              </div>
-              <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Ciudad" aria-label="ciudad">
-              </div>
-              <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="CP" aria-label="cp">
-              </div>
-              <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Telefono" aria-label="telefono">
-              </div>
-              <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Email" aria-label="mail">
-              </div>
-              <select class="form-select form-select-sm mb-5" aria-label=".form-select-sm example">
-                <option selected>Sucursar</option>
-                <option value="1">""</option>
-                <option value="2">""</option>
-                <option value="3">""</option>
-              </select>
-            </div>     
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary">Guardar</button>
-      </div>
-    </div>
-  </div>
-</div>
 
-<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-      </div>
-      <div class="modal-body">
-        <div class="col py-3 ">
-          <div class="text-center mb-1">
-            </div>            
-            <select class="form-select form-select-sm mb-2" aria-label=".form-select-sm example">
-              <option selected>Elija una opción</option>
-              <option value="1">Ingresar</option>
-              <option value="2">Actualizar</option>
-              <option value="3">Borrar</option>
-              <option value="4">Modificar</option>
-              <option value="5">Buscar</option>
-            </select>
-            <div class="row g-3">
-              <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1"
+          aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
               </div>
-              <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+              <div class="modal-body">
+                <div class="col py-3 ">
+                  <div class="text-center mb-1">
+                  </div>
+                  <select class="form-select form-select-sm mb-2" aria-label=".form-select-sm example">
+                    <option selected>Elija una opción</option>
+                    <option value="1">Ingresar</option>
+                    <option value="2">Actualizar</option>
+                    <option value="3">Borrar</option>
+                    <option value="4">Modificar</option>
+                    <option value="5">Buscar</option>
+                  </select>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="DNI" aria-label="doc">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Dirección" aria-label="direc">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="País" aria-label="pais">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="Ciudad" aria-label="ciudad">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="CP" aria-label="cp">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="Telefono" aria-label="telefono">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="Email" aria-label="mail">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="Sucursal" aria-label="sucursal">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="Nombre de contacto" aria-label="nombre">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="Telefono del contacto"
+                        aria-label="telefono cont">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="Email del contacto" aria-label="mail">
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="DNI" aria-label="doc">
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Guardar</button>
+                <button type="button" class="btn btn-primary">Consultas</button>
               </div>
-              <div class="col">
-                <input type="text" class="form-control" placeholder="Dirección" aria-label="direc">
-              </div>
-              <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="País" aria-label="pais">
-              </div>
-              <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Ciudad" aria-label="ciudad">
-              </div>
-              <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="CP" aria-label="cp">
-              </div>
-              <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Telefono" aria-label="telefono">
-              </div>
-              <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Email" aria-label="mail">
-              </div>
-              <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Sucursal" aria-label="sucursal">
-              </div>
-              <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Nombre de contacto" aria-label="nombre">
-              </div>
-              <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Telefono del contacto" aria-label="telefono cont">
-              </div>
-              <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Email del contacto" aria-label="mail">
-              </div>
-            </div>     
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary">Guardar</button>
-      </div>
-    </div>
-  </div>
-</div>
 
-<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-      </div>
-      <div class="modal-body">
-        <div class="col py-3 ">
-          <div class="text-center mb-1">
-            </div>            
-            <select class="form-select form-select-sm mb-2" aria-label=".form-select-sm example">
-              <option selected>Elija una opción</option>
-              <option value="1">Ingresar</option>
-              <option value="2">Actualizar</option>
-              <option value="3">Borrar</option>
-              <option value="4">Blanquear contraseña</option>
-              <option value="5">Buscar</option>
-            </select>
-            
-            <select class="form-select form-select-sm mb-2" aria-label=".form-select-sm example">
-              <option selected>Empleadon</option>
-              <option value="1">""</option>
-              <option value="2">""</option>
-              <option value="3">""</option>
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2"
+          aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+              </div>
+              <div class="modal-body">
+                <div class="col py-3 ">
+                  <div class="text-center mb-1">
+                  </div>
+                  <select class="form-select form-select-sm mb-2" aria-label=".form-select-sm example">
+                    <option selected>Elija una opción</option>
+                    <option value="1">Ingresar</option>
+                    <option value="2">Actualizar</option>
+                    <option value="3">Borrar</option>
+                    <option value="4">Blanquear contraseña</option>
+                    <option value="5">Buscar</option>
+                  </select>
 
-            </select>
-            <div class="row g-3">
-              <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Usuario" aria-label="usuario">
+                  <select class="form-select form-select-sm mb-2" aria-label=".form-select-sm example">
+                    <option selected>Empleado</option>
+                    <option value="1">""</option>
+                    <option value="2">""</option>
+                    <option value="3">""</option>
+
+                  </select>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="Usuario" aria-label="usuario">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="Contraseña" aria-label="contraseña">
+                    </div>
+                    <div class="col-md-6">
+                      <input type="text" class="form-control" placeholder="Perfil" aria-label="perfil">
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Contraseña" aria-label="contraseña">
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Guardar</button>
+                <button type="button" class="btn btn-primary">Consultas</button>
               </div>
-              <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Perfil" aria-label="perfil">
-              </div>
-            </div>     
+            </div>
+          </div>
         </div>
+        <div>
+        </div>
+
+        <img src="../imag/tabla.JPG" class="tabla">
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary">Guardar</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div>
 
-</div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 
-  
-    <img src="../imag/tabla.JPG" class="tabla"> </div>
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-
-</body> 
+</body>
 
 </html>
