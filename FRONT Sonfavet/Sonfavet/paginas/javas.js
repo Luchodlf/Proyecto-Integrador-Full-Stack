@@ -12,3 +12,5 @@
     else{
         window.alert('Contraseña incorrecta')
     }})
+
+    /* Como no se logró que redireccione a la página general del proyecto quedó descartado */
