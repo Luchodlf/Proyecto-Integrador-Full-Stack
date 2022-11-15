@@ -11,24 +11,19 @@
   <body>
     <div class="izquierda">
       <form>
-        <h2> Bienvenido </h2>
+        <h2 id="tituloprincipal" onmouseover="Cambiartitulo()" > Bienvenido </h2>
         <label for="Usuario">Usuario:</label>
-        <input type="text" name="usuario" id="usuario">
+        <input type="text" name="usuario" id="usuario" required minlength="4">
 
         <label for="password">Contraseña:</label>
-        <input type="password" name="password" id="password">
+        <input type="password" name="password" id="pass" required maxlength="8">
 
         <div class="check">
           <input type="checkbox" name="" id="">
           <span>Recordar</span>
         </div>
 
-
-
-
-       <a type="button" href="paginas/general.html" >Ingresar</a> 
-
-       
+        <button onmouseover="Validardatos()">Acceder</button> 
       </form>
     </div>
 
@@ -37,6 +32,6 @@
 
 
     </div>
-    <!-- <script src="./paginas/javas.js"></script> -->
+    <script src="./paginas/javas.js"></script>
   </body>
 </html>
