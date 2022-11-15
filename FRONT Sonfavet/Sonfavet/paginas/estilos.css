@@ -92,6 +92,14 @@ body{
   flex-wrap: wrap;
   
 }
+.logo {
+  width: 150px;
+}
+
+.tabla {
+  width: 80%;
+  margin: 0px 0;
+}
 
 
 @media only screen and (max-width: 768px){

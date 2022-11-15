@@ -6,7 +6,8 @@
       let contraseña = document.querySelector("#password").value
     
     if(contras.includes (contraseña)){
-        window.location.replace = ("contacto.html")
+        window.location.replace = ("./paginas/inicio.html") 
+        // Deberia redirigir a la página de inicio
     }
     else{
         window.alert('Contraseña incorrecta')
